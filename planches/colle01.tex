@@ -1,0 +1,87 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage{ulem} % pour barrer avec \sout
+
+\DeclareMathOperator{\pgcd}{pgcd}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°1 (XMP)\\
+Lundi 14 septembre 2015\\
+
+Dans ces exercices, les notions de ``simple'' ou ``double'' à propos d'une valeur propre réfèrent à leur ordre de multiplicité dans le polynôme caractéristique.
+
+% Source : Oraux X-ENS Algèbre 2 - CASSINI
+
+\subsection*{\underline{Exercice 1}} % 2.3
+On pose $A_1= \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$ et $A_{n+1}=\begin{pmatrix} A_n & A_n \\ A_n & -A_n \end{pmatrix}$. Trouver les valeurs propres de $A_n$.
+
+\subsection*{\underline{Exercice 2}} % 2.2
+Soient $A,B,C \in M_2(\bK)$. Mq $\exists$ une combinaison linéaire à coefficients non tous nuls de ces matrices admettant une valeur propre double.
+
+\subsection*{\underline{Exercice 3}} % 2.1
+Soit $\bK$ un corps, $\lambda\in\bK, A\in M_n(\bK)$, et $X,Y\in M_{n,1}(\bK)$ tels que :
+\begin{enumerate}
+\item $AX=\lambda X$ ;
+\item $~^tYA = \lambda ~^tY$ ;
+\item $~^tY=X \neq 0$ ;
+\item $rg(A-\lambda I_n)=n-1$.
+\end{enumerate}
+
+Montrer que $\lambda$ est une valeur propre simple.
+
+\subsection*{\underline{Exercice 4}} % 2.4
+Soit $A\in M_n(\bC)$. On définit une suite $(A_k)$ avec $A_0=A$ et $A_{k+1}=A(A_k-\frac{1}{k+1}tr(A_k)I_n)$. Montrer que $A_n=0$.
+
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}

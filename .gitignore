@@ -1,0 +1,16 @@
+# LaTeX generated files #
+#########################
+*.aux
+*.bbl
+*.blg
+*.toc
+*.out
+*.log
+*.synctex.gz
+planches/*.pdf
+
+# Other ignored files #
+#######################
+*.txt
+autres/*
+
