@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage{ulem} % pour barrer avec \sout
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°2 (XMP)\\
+Lundi 21 septembre 2015\\
+
+% Sources : 
+% [1] Tout-en-Un MP - Dunod - Réduction des endomorphismes
+% [2] Oraux X-ENS - Cassini - Algèbre 2
+
+\subsection*{\underline{Exercice 1}} % [1] Cours (HP) + [1] 5
+
+\paragraph{Préliminaires}
+Étant donnée l'équation récurrente linaire à coefficients dans $\bC$ 
+$$(E):x_{n+p}+\alpha_{p-1}x_{n+p-1}+...+\alpha_{0}x_{n}=0,$$ 
+on appelle polynôme caractéristique de $(E)$ $$C(X)=X^p+\sum\limits_{k=0}^{p-1}\alpha_{k}X^k=\prod\limits_{k=1}^r(X-\lambda_k)^{p_k}.$$
+En considérant $T\in\rL(\bC^{\bN}) : (u_n)_{n\in\bN} \mapsto (u_{n+1})_{n\in\bN}$ et en supposant $\alpha_0\neq 0$, montrer que toute solution de $(E)$ s'écrit $$\forall n\in \bN, x_n = \sum\limits_{k=1}^rP_k(n)\lambda_k^n$$ où les $\lambda_k$ sont les racines distinctes de $C$, et $P_k\in\bC_{p_k-1}[X]$.
+
+\paragraph{Application}
+Étant donnés $a_0, ..., a_{k-1}\in \bC$, on pose 
+$\left\lbrace\begin{array}{ll}
+x_0, ..., x_{p-1}&=a_0, ..., a_{p-1}\\
+x_{n+p}&=\frac{1}{p}\sum\limits_{k=0}^{p-1}x_{n+k}
+\end{array}\right.$.\\
+$(x_n)$ admet-elle une limite ?\\
+Si oui, laquelle ?
+
+\subsection*{\underline{Exercice 2}} % [1] 13
+
+Soit $n\in\bN^*$. Montrer que $A\text{ et }B\in\rM_n(\bC)$ ont une valeur propre commune si et seulement si $\exists U\in\rM_n^*(\bC) : UA=BU$.
+
+\subsection*{\underline{Exercice 3}} % [1] 25 = [2] 2.33
+
+Soit $E$ un $\bK$-ev de dimension finie $n$, avec $\bK=\bR\text{ ou }\bC$. Montrer que $u\in\rL (\bC)$ est nilpotent si et seulement si $\forall k\in \llbracket 1,n\rrbracket ,\ \tr(u^k) = 0$.
+
+\subsection*{\underline{Problème bonus}} % [2] 2.19 + [2] 2.32
+
+\noindent a) Soit $E$ un $\bK$-ev (avec $\bK=\bR\text{ ou }\bC$) de dimension finie $n$.
+\begin{enumerate}
+\item Montrer que la restriction d'un endomorphisme diagonalisable à un sous-espace stable est diagonalisable.
+\item Soit $\Gamma$ un sous-ensemble de $\rL(E)$ d'endomorphismes de $E$ commutant deux à deux. Montrer que les éléments de $\Gamma$ sont simultanément diagonalisables.\\
+\end{enumerate}
+
+\noindent b) Soient $A,B\in\rM_n(\bR)$ diagonalisables telles que $e^A=e^B$. Montrer que $A=B$.
+
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}
