@@ -1,0 +1,122 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage[normalem]{ulem} % pour barrer avec \sout, et autres effets intéressants
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°3 (XMP)\\
+Lundi 28 septembre 2015
+
+% Sources : 
+% [1] Les contre-exemples en mathématiques - Ellipses
+% [2] Exercices d'analyse - Armand Colin
+
+\subsection*{\underline{Sujet 1}}
+
+\paragraph*{Question} % [1] 10.6
+
+Exhiber une fonction convexe qui n'est pas continue.
+
+\paragraph*{Exercice (\emph{Inégalité de Minkowsky)}} % [2] 3.18
+
+Soient $a_1, ..., a_n, b_1, ..., b_n \in \bR_+^*$ et $p,q>1:\frac{1}{p}+\frac{1}{q}=1$. Montrer que 
+$$\left(\sum\limits_{i=1}^n(a_i+b_i)^p\right)^{1/p}\leq\left(\sum\limits_{i=1}^na_i^p\right)^{1/p}+\left(\sum\limits_{i=1}^nb_i^p\right)^{1/p}.$$
+On pourra supposer l'\emph{inégalité de Hölder} (\emph{cf.} \uline{Sujet 3}) : $\sum\limits_{i=1}^na_ib_i\leq\left(\sum\limits_{i=1}^na_i^p\right)^{1/p}\left(\sum\limits_{i=1}^nb_i^q\right)^{1/q}.$
+
+\subsection*{\underline{Sujet 2}} % [1] 10.7
+
+Soit $f$ une fonction définie sur un intervalle réel $I$ et vérifiant 
+$$\forall x,y\in I, f\left(\frac{x+y}{2}\right)\leq\frac{f(x)+f(y)}{2}.$$
+
+On suppose qu'il existe un supplémentaire $V$ de $\bQ$ dans le $\bQ$-ev $\bR$ (conséquence de l'\emph{axiome du choix}). $f$ est-elle convexe ?
+
+\subsection*{\underline{Sujet 3}}
+
+\paragraph*{Question} % Programme de colle
+
+Soit $f$ une fonction convexe sur un intervalle réel $I$, $x_1, ..., x_n$ des points de $I$, et $\lambda_1,...,\lambda_n$ des réels positifs de somme $1$. Montrer que $f(\sum\limits_{i=1}^n\lambda_ix_i)\leq\sum\limits_{i=1}^n\lambda_if(x_i))$.
+
+\paragraph*{Exercice (\emph{Inégalité de Hölder)}} % [2] 3.18
+
+Soient $a_1, ..., a_n, b_1, ..., b_n \in \bR_+^*$ et $p,q>1:\frac{1}{p}+\frac{1}{q}=1$. Montrer que 
+$$\sum\limits_{i=1}^na_ib_i\leq\left(\sum\limits_{i=1}^na_i^p\right)^{1/p}\left(\sum\limits_{i=1}^nb_i^q\right)^{1/q}.$$
+Il est possible (mais pas obligatoire) de commencer par montrer que $x,y>0\Rightarrow x^{1/p}y^{1/q}\leq\frac{x}{p}+\frac{y}{q}$.
+
+\subsection*{\underline{Problème bonus}} % [1] 10.8
+
+On pose successivement (avec $d$ la distance associée à la norme usuelle $|\cdot |$) :
+
+$$\begin{array}{llll}
+g : & \bR & \rightarrow & \bR\\
+& x & \mapsto & d(x,\bZ),
+\end{array}$$
+
+$$\forall n \in \bN, \begin{array}{llll}
+u_n : & \bR & \rightarrow & \bR\\
+& x & \mapsto & \frac{g(4^nx)}{4^n},
+\end{array}$$
+
+$$\begin{array}{llll}
+f : & \bR & \rightarrow & \bR\\
+& x & \mapsto & \sum\limits_{n=0}^\infty u_n(x).
+\end{array}$$
+
+Montrer que $f$ n'est convexe ou concave sur aucun intervalle non-trivial de $\bR$.
+
+(Le chapitre sur les séries de fonctions donne cependant que $f$ est continue, c'est donc un contre-exemple pour une éventuelle réciproque à $[f$ convexe sur $I$ ouvert $\Rightarrow f$ continue sur $I]$)
+
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}
