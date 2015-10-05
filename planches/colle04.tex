@@ -1,0 +1,97 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage[normalem]{ulem} % pour barrer avec \sout, et autres effets intéressants
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°4 (XMP)\\
+Lundi 5 octobre 2015
+
+% Sources : 
+% [1] Les maths en tête (Analyse) - Xavier Gourdon - Ellipses
+
+\subsection*{\underline{Sujet 1}}
+\paragraph*{Question (Cours)} % Cours
+Montrer qu'une suite possédant au moins deux valeurs d'adhérence diverge. Une suite possédant une unique valeur d'adhérence converge-t-elle ? 
+
+\paragraph*{Exercice} % [1] Chapitre 1.5 - Exercice 7
+Soit $\varphi$ une forme linéaire sur un $\bR$-evn $E$. Montrer que $\varphi$ est continue si et seulement si son noyau est une partie fermée de $E$.
+
+\subsection*{\underline{Sujet 2}} % [1] Chapitre 1.5 - Exercice 6
+
+\paragraph*{(Théorème de Carathéodory)} 
+Soit $E$ un $\bR$-ev de dimension $n\in \bN^*$ et $x$ le barycentre de $p$ vecteurs de $E$. Montrer que $x$ est le barycentre d'au plus $n+1$ de ces vecteurs.
+
+\subsection*{\underline{Sujet 3}}
+
+\paragraph*{Question} % [1] Chapitre 1.5 - Exercice 6
+Soient $E$ un e.v.n. et $C$ un convexe de $E$. Montrer que l'intérieur et l'adhérence de $C$ sont convexes.
+
+\paragraph*{Exercice} % [1] Chapitre 1.5 - Exercice 9
+Soit $E$ un $\bR$-evn de dimension infinie.  Montrer que la boule $B_f(0,1)$ ne peut pas être incluse dans une réunion finie de boules ouvertes de rayon $1$.
+
+\subsection*{\underline{Problème bonus}} % [1] Chapitre 1.5 - Exercice 6
+
+\paragraph*{Application du théorème de Carathéodory}
+On suppose vrai le résultat du \textbf{\underline{Sujet 2}}. 
+On donne (ou rappelle) les définitions suivantes :
+\begin{itemize}
+\item L'\emph{enveloppe convexe} $Conv(A)$ dans $E$ d'un sous-ensemble $A$ de $E$ est l'intersection de l'ensemble des parties convexes de $E$ contenant $A$.
+\item On dit qu'un ensemble $C$ est \emph{compact} si toute suite d'éléments de $C$ admet une valeur d'adhérence dans $C$.
+\end{itemize}
+Montrer que l'enveloppe convexe $Conv(A)$ d'une partie compacte $A$ d'un $\bR$-evn $E$ de dimension finie est compacte.
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}
