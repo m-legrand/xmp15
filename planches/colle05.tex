@@ -1,0 +1,99 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage[normalem]{ulem} % pour barrer avec \sout, et autres effets intéressants
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rO}{\mathcal{O}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°5 (XMP)\\
+Lundi 12 octobre 2015
+
+% Sources : 
+% Tout-en-Un Dunod - Chapitre 11
+
+\subsection*{\underline{Sujet 1}}
+\paragraph*{Question (Cours)} % Cours
+Théorème de Heine.
+
+\paragraph*{Exercice (Lemme de Croft)} % Exo 6
+Soit $f : \bR_+ \rightarrow \bR$ telle que $\forall x >0, \lim\limits_{n\rightarrow\infty}f(nx)=0$.
+\begin{itemize}
+\item Montrer que si $f$ est uniformément continue, alors $\lim\limits_{x\rightarrow\infty}f(x)=0$.
+\item Discuter du cas où $f$ est seulement continue.
+\end{itemize}
+
+\subsection*{\underline{Sujet 2}}
+\paragraph*{Question (Cours)} % Cours
+Définition d'une application continue. Réciproque d'un ouvert (\emph{resp.} d'un fermé) par une application continue.
+
+\paragraph*{Exercice} % Exo 13
+\begin{itemize}
+\item Montrer que l'ensemble $\rO(n)$ des matrices orthogonales sur $\bR^n$ est compact.
+\item Montrer qu'il existe une bijection continue à réciproque continue entre $\rG\rL_n(\bR)$ et $\bR^{\frac{n(n+1)}{2}}\times \rO(n)$. On dit alors que ces deux espaces sont \emph{homéomorphes}.
+\end{itemize}
+
+
+\subsection*{\underline{Sujet 3}}
+\paragraph*{Question (Cours)} % Cours
+Démontrer la continuité du déterminant.
+
+\paragraph*{Exercice} % Exo 18
+Soient $E = \{u \in \bR^\bN \ |\ \sum\limits_{k=0}^\infty u_k^2<\infty\}$ et $e_n=(\delta_{k=n})_{k\in\bN}$.
+\begin{itemize}
+\item Montrer que $A=\{0\}\cup\{\frac{1}{n}e_n \ |\ n\in\bN\}$ est compact.
+\item Montrer que l'enveloppe convexe de $A$ dans $E$ (c'est à dire la plus petite partie convexe de $E$ contenant $A$) n'est pas compacte.
+\end{itemize}
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}
