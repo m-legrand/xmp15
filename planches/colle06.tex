@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage[normalem]{ulem} % pour barrer avec \sout, et autres effets intéressants
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rO}{\mathcal{O}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°6 (XMP)\\
+Lundi 2 novembre 2015
+
+% Sources : 
+% Oraux X-ENS - Analyse 1 - Chapitre 3
+
+\subsection*{\underline{Sujet 1}}
+Soit $(a_n)_{n\in\bN^*}$ une suite de réel positifs non nuls telle que la série $\sum a_n$ converge.
+\begin{enumerate}
+\item Montrer que si $\alpha>\frac{1}{2}$, la série $\sum\frac{\sqrt{a_n}}{n^\alpha}$ converge.
+\item Que dire du cas $\alpha=\frac{1}{2}$ ?
+\end{enumerate}
+
+\subsection*{\underline{Sujet 2}}
+Soit $(u_n)_{n\in\bN^*}$ une suite positive décroissante convergeant vers $0$. Montrer que les séries $\sum u_n$ et $\sum n(u_n-u_{n+1})$ sont de même nature et ont, en cas de convergence, la même valeur.
+
+\subsection*{\underline{Sujet 3}}
+Déterminer la nature de la série $\sum \ln\left(\frac{(\ln(n+1))^2}{\ln(n)\ln(n+2)}\right)$.
+
+\subsection*{\underline{Sujet bonus}}
+Soit $(a_n)_{n\in\bN^*}$ une suite strictement positive telle que $\sum a_n$ converge, et $(b_n)_{n\in\bN^*}$ une suite réelle vérifiant $b_n = 1+O\left(\frac{1}{\ln(n)}\right)$. Étudier la nature de la suite $\sum a_n^{b_n}$.
+
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}
