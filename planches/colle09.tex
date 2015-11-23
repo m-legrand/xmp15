@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage[normalem]{ulem} % pour barrer avec \sout, et autres effets intéressants
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rO}{\mathcal{O}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°9 (XMP)\\
+Lundi 23 novembre 2015
+
+% Source : 
+% http://mp.cpgedupuydelome.fr
+
+\subsection*{\underline{Sujet 1}}
+
+\paragraph*{Question de cours}
+Formule de Taylor-Young.
+
+\paragraph*{Exercice}
+Soit $f : \bR \rightarrow E$ de classe $\rC^n$. Donner l'existence et la valeur de 
+$\lim\limits_{h\rightarrow 0}\frac{1}{h^n}\sum\limits_{k=0}^n(-1)^k\begin{pmatrix} n\\ k \end{pmatrix}f(kh).$
+
+\subsection*{\underline{Sujet 2}}
+
+\paragraph*{Question de cours}
+Dérivabilité et dérivée de $f\circ\varphi$ où $\varphi$ est une fonction réelle de variable réelle et $f$ est une fonction vectorielle.
+
+\paragraph*{Exercice}
+Soit $f : [0,1] \rightarrow E$ dérivable à droite en $0$ et vérifiant $f(0)=0$. Donner l'existence et la valeur de 
+$\lim\limits_{n\rightarrow +\infty}\sum\limits_{k=0}^nf\left(\frac{k}{n^2}\right).$
+
+\subsection*{\underline{Sujet 3}}
+
+\paragraph*{Question de cours}
+Inégalité des accroissements finis pour une fonction vectorielle de classe $\rC^1$.
+
+\paragraph*{Exercice}
+On munit $\bR^3$ de sa structure euclidienne orientée usuelle, et on se donne trois fonctions $e_1, e_2, e_3 \in \rC^1(\bR,\bR^3)$ telles que $\forall t \in \bR, (e_1(t), e_2(t), e_3(t))$ est une BOND de $\bR^3$.\\
+Exhiber une fonction $\Omega \in \rC^0(\bR, \bR^3)$ telle que $\forall i\in \{1, 2, 3\}, e_i'=\Omega\wedge e_i$.
+
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}

@@ -1,0 +1,109 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage[normalem]{ulem} % pour barrer avec \sout, et autres effets intéressants
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rO}{\mathcal{O}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°8 (XMP)\\
+Lundi 16 novembre 2015
+
+% Source : 
+% Les maths en tête - Analyse
+
+\subsection*{\underline{Sujet 1}}
+
+\paragraph*{Question de cours}
+Lemme d'Abel.
+
+\paragraph*{Question (Formule de Cauchy)} Soit $\sum a_nz^n$ une série entière de rayon de convergence $R>0$ et $f$ la somme de cette série sur son disque de convergence. Montrer que 
+$$\forall r\in ]0,R[, n\in\bN, \int_0^{2\pi}f(re^{i\theta})e^{-ni\theta}d\theta.$$
+
+\paragraph*{Exercice}
+Donner le rayon de convergence $R$, puis la somme des séries entières suivantes :
+\begin{itemize}
+\item[a)] $\sum\limits_{n\in\bN}n^2x^n$;
+\item[b)] $\sum\limits_{n\in\bN}\frac{x^n}{2n+1}$ (sur $\bR_+^*$);
+\item[c)] $\sum\limits_{n\in\bN^*}\frac{x^n}{n(n+2)}$;
+\item[d)] $\sum\limits_{n\in\bN}\frac{x^n}{n!}cos(n\theta)$.
+\end{itemize}
+
+\subsection*{\underline{Sujet 2}}
+
+\paragraph*{Question de cours}
+Produit de Cauchy.
+
+\paragraph*{Exercice}
+Après en avoir justifié l'existence, développer en série entière la fonction 
+$$\begin{array}{ccccc}
+f & : & ]-1,1[ & \to & \bR \\
+ & & x & \mapsto & (\arcsin x)^2 .\\
+\end{array}$$
+
+\subsection*{\underline{Sujet 3}}
+
+\paragraph*{Question de cours}
+Dérivée(s) d'une série entière.
+
+\paragraph*{Exercice}
+$$\begin{array}{ccccc}
+f & : & ]0,1[ & \to & \bR \\
+ & & x & \mapsto & \frac{\arcsin \sqrt{x}}{\sqrt{x(1-x)}} \\
+\end{array}$$
+Montrer que $f$ coïncide sur $]0,1[$ avec la somme d'une série entière, et en calculer les coefficients.
+
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}

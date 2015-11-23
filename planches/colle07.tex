@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage[normalem]{ulem} % pour barrer avec \sout, et autres effets intéressants
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rO}{\mathcal{O}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°7 (XMP)\\
+Lundi 9 novembre 2015
+
+% Sources : 
+% Oraux X-ENS - Analyse 2
+
+\subsection*{\underline{QC 1}}
+Limite uniforme de fonctions continues.
+
+\subsection*{\underline{QC 2}}
+Intégration d'une limite uniforme sur un segment.
+
+\subsection*{\underline{QC 3}}
+Dérivation d'une suite de fonctions.
+
+\subsection*{\underline{Exercice 1}}
+Soit $f : \bR \rightarrow \bR$ une fonction $1$-périodique définie par $\forall x \in [-\frac{1}{2}, \frac{1}{2}], f(x) = x^2$. Montrer que $$\forall x \in \bR, \sum\limits_{n=-\infty}^\infty 2^nf\left(\frac{x}{2^n}\right) = |x|.$$
+
+\subsection*{\underline{Exercice 2}}
+Soit $f \in \rC^0(\bR, \bR)$ telle que $\exists \ a>0 : \forall x,y, |f(x+y)-f(x)-f(y)| \leq a$. Montrer que $\forall x, g_n(x):=\frac{f(2^nx)}{2^n}$ admet une limite $g(x)$, que $g$ est linéaire, continue, et que $f-g$ est bornée.
+
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}

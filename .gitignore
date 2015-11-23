@@ -13,4 +13,4 @@ planches/*.pdf
 #######################
 *.txt
 autres/*
-
+.DS_Store
