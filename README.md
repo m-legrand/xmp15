@@ -14,6 +14,7 @@ Les fichiers du dossier `planches` sont écrits en langage Latex. Ils sont explo
  - [09/11/2015](http://latex.aslushnikov.com/compile?git=https://github.com/m-legrand/xmp15&target=planches/colle07.tex)
  - [16/11/2015](http://latex.aslushnikov.com/compile?git=https://github.com/m-legrand/xmp15&target=planches/colle08.tex)
  - [23/11/2015](http://latex.aslushnikov.com/compile?git=https://github.com/m-legrand/xmp15&target=planches/colle09.tex)
+  - [30/11/2015](http://latex.aslushnikov.com/compile?git=https://github.com/m-legrand/xmp15&target=planches/colle10.tex)
 
 ## Participation
 Tout commentaire ou correction d'erreurs qui ne manqueront pas de s'immiscer dans ces pages est bienvenu dans la section des [issues](https://github.com/m-legrand/xmp15/issues).

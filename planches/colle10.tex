@@ -1,0 +1,107 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais,frenchb]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{textcomp}
+\usepackage{hyperref} % liens avec \url
+\usepackage[normalem]{ulem} % pour barrer avec \sout, et autres effets intéressants
+
+\DeclareMathOperator{\pgcd}{pgcd}
+\DeclareMathOperator{\tr}{tr}
+
+\begin{document}
+
+\newcommand{\rA}{\mathcal{A}}
+\newcommand{\rB}{\mathcal{B}}
+\newcommand{\rC}{\mathcal{C}}
+\newcommand{\rG}{\mathcal{G}}
+\newcommand{\rF}{\mathcal{F}}
+\newcommand{\rO}{\mathcal{O}}
+\newcommand{\rP}{\mathcal{P}}
+\newcommand{\rH}{\mathcal{H}}
+\newcommand{\rR}{\mathcal{R}}
+\newcommand{\rE}{\mathcal{E}}
+\newcommand{\rL}{\mathcal{L}}
+\newcommand{\rM}{\mathcal{M}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bF}{\mathbb{F}}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} %Pas de numérotation
+
+\noindent \textsc{Institution Sainte-Marie}\\
+Colle de Mathématiques n°10 (XMP)\\
+Lundi 30 novembre 2015
+
+% Source : 
+% http://www.maths-france.fr/MathSpe/Exercices/
+
+\subsection*{\underline{Question 1}}
+
+Soit $A\in M_n(\bC)$. Montrer qu'il existe $p_0\in\bN$ tel que $\sum\limits_{k=0}^{p_0}\frac{A^k}{k!}$ soit inversible.
+
+\subsection*{\underline{Question 2}}
+
+Soit $A=\begin{pmatrix}
+3 & 2 & 2\\
+1 & 0 & 1\\
+-1 & 1 & 0\\
+\end{pmatrix}$. Calculer $\exp(tA), t\in\bR$.
+
+\subsection*{\underline{Question 3}}
+
+Soit $A=\begin{pmatrix}
+4 & 1 & 1\\
+6 & 4 & 2\\
+-10 & -4 & -2\\
+\end{pmatrix}$. Calculer $\exp(tA), t\in\bR$.
+
+\subsection*{\underline{Question 4}}
+
+Soit $A\in M_n(\bC)$. Calculer $\lim\limits_{p\rightarrow +\infty}\left(I_n+\frac{A}{p}\right)^p$.
+
+\subsection*{\underline{Question 5}}
+
+Soit $A\in M_n(\bC)$. Montrer que $\exp(A)$ est un polynôme en $A$.
+
+\subsection*{\underline{Problème}}
+
+\begin{itemize}
+\item[1.]
+\begin{itemize}
+\item[a)] Soit $\omega\in\bR^3$. Montrer que $f_\omega : x \mapsto \omega \wedge x$ est un morphisme anti-symétrique sur $\bR^3$.
+\item[b)] Montrer que tout morphisme anti-symétrique s'écrit sous la forme d'un unique $f_\omega$.
+\end{itemize}
+\item[2.] Soit $\omega\in\bR^3$. Montrer que $\exp(f_\omega)$ est une rotation, et en donner l'axe et l'angle.
+\end{itemize}
+
+\vfill
+
+\begin{center}
+\url{https://github.com/m-legrand/xmp15}
+\end{center}
+
+\end{document}
